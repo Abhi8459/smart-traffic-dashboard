@@ -290,7 +290,7 @@ function App() {
             {isSidebarOpen && (
               <div className="flex items-center space-x-2">
                 <Activity className="w-6 h-6 text-blue-400" />
-                <span className="font-bold text-white">Traffic Hub</span>
+                <span className="font-bold text-white">Avinya</span>
               </div>
             )}
             <button
@@ -330,7 +330,7 @@ function App() {
           <div className="max-w-full mx-auto flex justify-between items-center">
             <div className="flex items-center space-x-4">
               <div>
-                <h1 className="text-2xl font-bold text-white">Urban Traffic Dashboard</h1>
+                <h1 className="text-2xl font-bold text-white">Smart Traffic Management System for Urban Congestion</h1>
                 <p className="text-gray-400 text-sm">{currentTime.toLocaleString()}</p>
               </div>
             </div>
