@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { margin: 0; background: linear-gradient(45deg, #1e3c72, #2a5298); }
+        .video-content { 
+            width: 100vw; height: 100vh; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; color: white; font-family: Arial;
+        }
+        .title { font-size: 24px; margin-bottom: 20px; }
+        .status { font-size: 16px; opacity: 0.8; }
+        .indicator { width: 20px; height: 20px; background: #ff4444; border-radius: 50%; 
+                    animation: pulse 2s infinite; margin: 20px; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+    </style>
+</head>
+<body>
+    <div class="video-content">
+        <h1 class="title">🚦 Live Traffic Feed</h1>
+        <div class="indicator"></div>
+        <p class="status">Real-time Camera Feed</p>
+        <p style="font-size: 14px; margin-top: 20px;">📹 Camera: Main St & 5th Ave</p>
+    </div>
+    <script>
+        // Simulate live updates
+        setInterval(() => {
+            document.querySelector('.status').textContent = 
+                'Live Feed - ' + new Date().toLocaleTimeString();
+        }, 1000);
+    </script>
+</body>
+</html>
